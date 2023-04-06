@@ -1,0 +1,56 @@
+body {
+    font-size: 5rem;
+    display: block;
+    width: 5em;
+    height: 80vh;
+    text-align: center;
+    margin: 2em auto;
+}
+
+#result-section {
+    width: 100%;
+    height: 4rem;
+    display: block;
+    background-color: black;
+}
+
+#result-number {
+    display: block;
+    font-size: 3rem;
+    position: relative;
+    text-align: right;
+    z-index: 1;
+    color: white;
+    padding: 2%;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+#clear {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+#num_0 {
+    grid-column: 1/4;
+}
+
+.operator {
+    background-color: #df974c;
+    color: white;
+}
+
+.other {
+    background-color: rgba(128, 128, 128, 0.345);
+}
