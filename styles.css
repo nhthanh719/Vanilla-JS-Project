@@ -3,8 +3,7 @@ body {
     display: block;
     width: 5em;
     height: 100vh;
-    text-align: center;
-    margin: 2em auto;
+    margin: 1em auto;
 }
 
 #result-section {
