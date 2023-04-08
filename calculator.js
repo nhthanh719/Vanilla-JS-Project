@@ -25,8 +25,8 @@ function handleSymbol(symbol) {
   if (symbol === 'C') {
     buffer = '0';
     rerenderScreen();
-  } elseif (symbol === '=') {
-      
+  } elseif(symbol === '=') {
+
   }
 }
 
