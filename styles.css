@@ -6,14 +6,14 @@ body {
     margin: 1em auto;
 }
 
-#result-section {
+#screen-section {
     width: 100%;
     height: 4rem;
     display: block;
     background-color: black;
 }
 
-#result-number {
+#screen {
     display: block;
     font-size: 3rem;
     position: relative;
