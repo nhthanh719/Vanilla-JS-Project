@@ -1,6 +1,6 @@
 let buffer = "0";
 let runningTotal = 0;
-let previousOperator;
+let previousOperator = null;
 const screen = document.querySelector("#screen");
 
 function buttonClick(value) {
@@ -24,17 +24,21 @@ function handleSymbol(symbol) {
   switch (symbol) {
     case 'C':
       buffer = '0';
+      previousOperator = null;
       break;
 
     case '=':
       if (previousOperator === null) {
         //Need numbers to do math
+        return;
       } else {
-        calculate(parseInt(buffer));
-      }
 
-      buffer = "" + runningTotal; 
+        calculate(parseInt(buffer));
+        buffer = "" + runningTotal; 
+      } 
+      
       runningTotal = 0;
+      previousOperator = null;
       break;
 
 
